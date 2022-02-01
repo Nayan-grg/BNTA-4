@@ -7,7 +7,7 @@ public class Exercise8 {
     public static void main(String[] args) {
         String[] names = {"wfe","wfef","efcer"};
         String[] secondArr= capitalise(names);
-        System.out.println(secondArr);
+        System.out.println(Arrays.toString(secondArr));
 
     }
     static String[] capitalise(String[] string) {
