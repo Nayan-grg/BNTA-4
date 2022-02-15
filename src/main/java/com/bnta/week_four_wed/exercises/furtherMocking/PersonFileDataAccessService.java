@@ -88,6 +88,21 @@ public class PersonFileDataAccessService implements PersonDAO {
 
     @Override
     public Person getPersonById(int id) {
+        try {
+            File file =new File("src/hello.txt");
+            List<Person> people=new ArrayList<>();
+            Scanner scanner = new Scanner(file);
+            while(scanner.hasNext()){
+                String[] line = scanner.nextLine().split(",");
+                if(Integer.parseInt(line[0])==id){
+                    Person person=new Person(Integer.parseInt(line[0]),line[1], Integer.parseInt(line[2]));
+                    return person;
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
         return null;
     }
 }

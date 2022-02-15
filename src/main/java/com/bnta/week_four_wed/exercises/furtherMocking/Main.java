@@ -7,6 +7,7 @@ public class Main {
         Person nana=new Person(1,"Nana",22);
         PersonDAO personDAO1= new PersonFileDataAccessService();
         PersonService personService = new PersonService(personDAO1);
+        System.out.println(personService.getPersonById(2));
 //        personService.savePerson(nana);
 //        System.out.println(personService.getPeople());;
 //        System.out.println(personService.getPersonById(1));;
