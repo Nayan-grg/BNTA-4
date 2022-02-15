@@ -2,9 +2,8 @@ package com.bnta.week_four_wed.exercises.furtherMocking;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
-public class PersonDataAccess implements PersonDAO{
+public class PersonListDataAccessService implements PersonDAO{
 
     //list is working as database
     static List<Person> people=new ArrayList<>();
