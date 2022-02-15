@@ -2,12 +2,15 @@ package com.bnta.week_two_mon.ArraysConditionalsMethods;
 
 import java.util.Scanner;
 
-public class Exercise4<Public> {
+public class Exercise4{
     public static void main(String[] args) {
-        primeOrNot(21);
+        primeOrNot(2);
 
     }
     static void primeOrNot(int input1) {
+        if(input1<=2){
+            throw new IllegalStateException("input invalid");
+        }
         for(int i=2; i<input1;i++) {
             if(input1%i==0) {
                 System.out.println(input1+" is not a prime number");

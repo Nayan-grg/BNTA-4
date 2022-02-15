@@ -15,6 +15,7 @@ public class Exercise7 {
     }
 
     static String findLongestString(String[] strArray){
+        if(strArray==null){return "";}
         //First loop through array
         // Find length of each string
         // Compare it - if longer store
@@ -24,6 +25,9 @@ public class Exercise7 {
 //        System.out.println(longestStrLength);
 
         for (int i = 1; i < strArray.length; i++) {
+            if(strArray[i]==null||strArray[i]==""){
+                continue;
+            }
 //            System.out.println(strArray[i]);
             if (longestStrLength<strArray[i].length()){
                 longestStr = strArray[i];
@@ -33,6 +37,8 @@ public class Exercise7 {
                 longestStr = longestStr + ", " + strArray[i];
             }
 
+        }if (longestStr.equals("")){
+            return "";
         }
 
         return longestStr;

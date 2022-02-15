@@ -11,7 +11,7 @@ public class GarageService {
     public static void addCars(Car car, Garage garage) {
         //The garage needs to be open
         //The garage needs to have some space
-        //add car to the empty space
+        //Add car to the empty space
         if (garage.isOpen()) {
             for (int i = 0; i < garage.getCars().length; i++) {
                 if (garage.getCars()[i] == null) {
