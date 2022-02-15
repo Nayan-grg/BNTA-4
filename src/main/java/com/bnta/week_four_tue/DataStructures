@@ -1,0 +1,23 @@
+a way storing a collection of data.
+Map can have a key and value
+List similar to array
+data structures -> we can perform different functions on them
+
+What is data structure:
+Is a way of organising data so that it can be used effectively.
+Data can be stored using various methods and each method has its own set of functions that it can be performed on it
+
+Always use List:
+List are arrays but they grow in size
+theres no gap in between so you dont have to loop through the array to add an element
+List is a collectionn so there are bunch of methods associated with it. ArrayList,__,__ are implementation.
+
+bad practice because it is inconvineint to have different data types in one list
+
+What is a cast?
+Person person = (Person)e
+
+<Integer> is different from int. <Integer> is an object.
+
+Stack:
+you can't access the bottom bit, can only access the top bit

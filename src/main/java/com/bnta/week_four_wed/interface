@@ -1,0 +1,11 @@
+Interface:
+An interface is a class that contains method with no body, aka abstract methods.
+
+Why is interface useful:
+An interface have multiple implementation. Implementation behave a bit different.
+
+Polymorphism:
+It means that something has many forms.
+Example:
+"+" This works differently in integers and strings -> In strings, it is concatenating
+but in integer, it is adding the values together

@@ -1,0 +1,12 @@
+//During testing, you don't pass anything to a constructor so no dependencies
+//DAO stores data to a file -- file database
+//Mocking is required to run test otherwise ir would be really slow if there are a lot of dependencies and if the file is too big
+If the file is large, testing would slow down
+In cases where you need to test all the classes that are dependent on each other, test can become slow so mocking is needed
+
+//Integration testing - testing all the classes dependent on each other so if there are dependencies,
+//Unit testing - is when you test in isolation
+
+Mocking is when you create a dummy and not actually use the real object.
+Mocking is a part of unit testing, we didn't learn about integration testing
+

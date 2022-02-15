@@ -1,0 +1,10 @@
+//Testing is important to ensure it works
+//JUnit allows us to do testing
+//AssertJ allows us to perform assertion
+//Maven allows us to bring in other dependency that other people bring in.
+//Only need to do testing on class that performs business logic
+//unit --> usually a method that you can test in isolation
+//You can't test private method because you can't access from other class--> you can't test private method
+//Run coverage on intellij --> But can't achieve 100% test coverage because you can't test constructors, static block
+
+
