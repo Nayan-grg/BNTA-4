@@ -13,7 +13,7 @@ public class PersonService {
     public void savePerson(Person person) {
         if (person.getAge() == null ||
                 person.getId() == null ||
-                person.getName().length() == 0) {
+                person.getName().length()==0) {
             throw new IllegalStateException("Person cannot have empty fields");
         }
 
@@ -32,7 +32,6 @@ public class PersonService {
             throw new IllegalStateException("person with id " + id + " not found");
         }
         personDAO.deletePerson(id);
-        System.out.println("person removed");
     }
 
 
